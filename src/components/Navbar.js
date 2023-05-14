@@ -7,7 +7,8 @@ class Header extends Component{
     constructor(props){
         super(props); 
         this.state = {
-            modalShow:false
+            modalShow:false,
+            
         }
     }
 
@@ -22,6 +23,8 @@ class Header extends Component{
             modalShow: false
         })
     }
+
+    
 
     render(){
         return(
@@ -49,6 +52,39 @@ class Header extends Component{
 };
 
 class MyModal extends Component{
+    constructor(props){
+    super(props);
+    this.state={
+        formFullName : ' ',
+        formEmail : ' ', 
+        formNumber : ' ',
+        formUrgent: ' '
+    }
+    }
+
+    handleInputChange = (event)=>{
+        const target = event.target;
+        console.log('made it here');
+        const value = target.type === 'checkbox' ? target.checked : target.value
+        const name = target.id;
+        console.log(name+' ---->'+value);
+        this.setState({
+            [name]: value
+        })
+        
+    }
+
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        const { formFullName, formEmail, formUrgent, formNumber } = this.state;
+
+        const mailtoLink = `mailto:honeylove3922@gmail.com?subject=Clean%20and%20Care%20Contact%20
+        Form&body=Email:%20${formEmail}%0DFull Name:%20${formFullName}%0DFull%20$Phone Number:%20${formNumber}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}`;
+        window.location.href = mailtoLink;
+        
+    }
+
+
     render() {
         return (
             <Modal
@@ -64,29 +100,37 @@ class MyModal extends Component{
                 </Modal.Header>
                 <Modal.Body>
                     <h4>Please Fillout Form</h4>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form onSubmit={this.handleSubmit}>
+
+                            <Form.Group className="mb-3" controlId="formEmail">
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Control onChange={this.handleInputChange} type="email" placeholder="Enter email" />
                                 <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                                 </Form.Text>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+
+
+                            <Form.Group className="mb-3" controlId="formFullName">
                                     <Form.Label>Full Name</Form.Label>
-                                    <Form.Control type="string" placeholder="Enter Full Name" />
+                                    <Form.Control type="string" placeholder="Enter Full Name"  onChange={this.handleInputChange}/>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+
+
+                            <Form.Group className="mb-3" controlId="formNumber">
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="string" placeholder="Enter Phone Number" />
+                                    <Form.Control type="string" placeholder="Enter Phone Number" onChange={this.handleInputChange} />
                             </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Urgent ?" />
+
+
+                            <Form.Group className="mb-3" controlId="formUrgent">
+                                    <Form.Check type="checkbox" label="Urgent ?" onChange={this.handleInputChange}/>
                             </Form.Group>
-                                <Button variant="primary" type="submit">
+
+                            <Button variant="primary" type="submit">
                                     Submit
-                                </Button>
-                            </Form>
+                            </Button>
+                        </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>

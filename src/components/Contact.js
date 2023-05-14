@@ -32,7 +32,7 @@ class Contact extends Component {
         const { formName, formEmail, formMessage, formCity, formRooms, formDate, formUrgent } = this.state;
         console.log(formName);
 
-        const mailtoLink = `mailto:doubleparked88@gmail.com?subject=Clean%20and%20Care%20Contact%20
+        const mailtoLink = `mailto:honeylove3922@gmail.com?subject=Clean%20and%20Care%20Contact%20
         Form&body=Name:%20${formName}%0DEmail:%20${formEmail}%0DMessage:%20${formMessage}%0DCity:%20${formCity}%0DRooms%20Needed:%20${formRooms}%0DDate%20Requested:%20${formDate}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}`;
         window.location.href = mailtoLink;
         
@@ -52,11 +52,11 @@ class Contact extends Component {
                 <br />
                 Greater Seattle Area
                 <br />
-                Phone: <a href="tel:555-555-5555">555-555-5555</a>
+                Phone: <a href="tel:253-348-9651">253-348-9651</a>
                 <br />
                 Email:{" "}
-                <a href="mailto:doubleparked88@gmail.com">
-                    doubleparked88@gmail.com
+                <a href="mailto:honeylove3922@gmail.com">
+                    HoneyLove3922@gmail.com
                 </a>
                 <br />
                 </address>
@@ -88,14 +88,21 @@ class Contact extends Component {
                     <Form.Control type="text" placeholder="Enter city" onChange={this.handleInputChange} />
                 </Form.Group>
 
-                <Form.Group controlId="formRooms">
-                    <Form.Label>Rooms Needed to be Cleaned</Form.Label>
-                    <Form.Control type="text" placeholder="Enter number of rooms" onChange={this.handleInputChange}/>
+                <br></br>
+                <Form.Group controlId="formRooms" onChange={this.handleInputChange}>
+                <Form.Select >
+                    <option>Select Number of Rooms</option>
+                    <option value="1" >One</option>
+                    <option value="2" >Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five +</option>
+                </Form.Select>
                 </Form.Group>
 
                 <Form.Group controlId="formDate">
                     <Form.Label>Date Requesting Service</Form.Label>
-                    <Form.Control type="text" placeholder="Enter date" onChange={this.handleInputChange}/>
+                    <Form.Control type="date" placeholder="Enter date" onChange={this.handleInputChange}/>
                 </Form.Group>
 
                 <Form.Group controlId="formUrgent">

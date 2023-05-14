@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Garamond, serif;
   background: rgb(63, 4, 98);
   background: linear-gradient(
     180deg,
@@ -113,4 +114,11 @@ article{
 
 .carousel-indicators{
   padding-bottom: 55px;
+}
+
+h3{
+  color: #353134;
+  background-color:  hsl(284, 17%, 55%, .8);
+  
+  
 }

@@ -15,8 +15,8 @@ class Banner extends Component{
                         
                         />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h4>We use Tried and True Products</h4>
+                        
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -27,8 +27,8 @@ class Banner extends Component{
                         />
 
                         <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h4>Being Sanitary is of the Utmost Importance</h4>
+                        
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -39,10 +39,7 @@ class Banner extends Component{
                         />
 
                         <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <h4>Cleaning is a Process</h4>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

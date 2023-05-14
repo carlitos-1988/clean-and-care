@@ -14,7 +14,13 @@ class Body extends Component{
                     </Col>
                     <Col xs={6} md={4}>
                     <h1>Clean and Care</h1>
-                    <p>Welcome to Clean and Care, your go-to cleaning service in the greater Seattle area! We are dedicated to providing top-notch cleaning services at affordable rates, without compromising on quality. Our team of experienced cleaners is trained to handle all types of cleaning tasks, from residential to commercial spaces. With attention to detail and a commitment to customer satisfaction, we ensure your space is left spotless and tidy. Contact us today to schedule your cleaning appointment and experience the difference of Clean and Care.</p>
+                    <br></br>
+                    <h2>
+                    <b>
+                    Welcome to Clean and Care, your go-to cleaning service in the greater Seattle area! We are dedicated to providing top-notch cleaning services at affordable rates, without compromising on quality. Our team of experienced cleaners is trained to handle all types of cleaning tasks, from residential to commercial spaces. With attention to detail and a commitment to customer satisfaction, we ensure your space is left spotless and tidy. Contact us today to schedule your cleaning appointment and experience the difference 
+                    of Clean and Care.
+                    </b>
+                    </h2>
                     </Col>
                 </Row>
             </Container>
