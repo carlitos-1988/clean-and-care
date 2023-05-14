@@ -35,7 +35,7 @@ class Header extends Component{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link onClick={this.handleModalShow}>Require an Estimate</Nav.Link>
+                <Nav.Link onClick={this.handleModalShow}>Contact</Nav.Link>
                 <NavDropdown title="More" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/about">About Me</NavDropdown.Item>
                 <NavDropdown.Item href="/work">Previous Work</NavDropdown.Item>
