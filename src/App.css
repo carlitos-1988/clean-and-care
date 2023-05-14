@@ -8,7 +8,6 @@
     rgba(177, 0, 255, 0.29037552521008403) 37%,
     rgba(195, 21, 215, 0.25115983893557425) 99%
   );
-  
 }
 
 .App-logo {
@@ -55,6 +54,8 @@
     rgba(177, 0, 255, 0.13911502100840334) 79%,
     rgba(195, 21, 215, 0.3015800070028011) 95%
   );
+  text-align: center;
+  width: 100vw;
 }
 
 .subintro {
@@ -78,7 +79,6 @@
   background-color: #6600ff;
   color: #6600ff;
   height: 10px;
-  width: 300%;
   text-align: right;
   margin: 0px;
 }
@@ -97,14 +97,14 @@
   color: #393646;
 }
 
-article{
+article {
   text-align: left;
 }
-.about{
+.about {
   height: 100vh;
 }
 
-.my-services{
+.my-services {
   height: 85vh;
   width: auto;
   object-fit: contain;
@@ -112,13 +112,11 @@ article{
   margin-top: 5vh;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   padding-bottom: 55px;
 }
 
-h3{
+h3 {
   color: #353134;
-  background-color:  hsl(284, 17%, 55%, .8);
-  
-  
+  background-color: hsl(284, 17%, 55%, 0.8);
 }

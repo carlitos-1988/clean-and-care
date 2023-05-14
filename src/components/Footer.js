@@ -12,7 +12,7 @@ class Footer extends Component{
                 <Navbar.Brand href="#home">
                 Clean & Care
                 </Navbar.Brand>
-                <a href="https://www.flaticon.com/free-icons/broom" title="broom icons">Request an estimate</a>
+                <a href="/contact" title="broom icons">Request an estimate</a>
             </Container>
             </Navbar>
         )

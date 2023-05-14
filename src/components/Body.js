@@ -12,7 +12,7 @@ class Body extends Component{
                     <Col xs={12} md={8}>
                     <Banner />
                     </Col>
-                    <Col xs={6} md={4}>
+                    <Col >
                     <h1>Clean and Care</h1>
                     <br></br>
                     <h2>
