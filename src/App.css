@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background: rgb(63, 4, 98);
+  background: linear-gradient(
+    180deg,
+    rgba(63, 4, 98, 0.5536808473389356) 0%,
+    rgba(177, 0, 255, 0.29037552521008403) 37%,
+    rgba(195, 21, 215, 0.25115983893557425) 99%
+  );
+  
 }
 
 .App-logo {
@@ -35,4 +43,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.intro {
+  color: aliceblue;
+  background: rgb(63, 4, 98);
+  background: linear-gradient(
+    171deg,
+    rgba(63, 4, 98, 0.33239233193277307) 2%,
+    rgba(177, 0, 255, 0.13911502100840334) 79%,
+    rgba(195, 21, 215, 0.3015800070028011) 95%
+  );
+}
+
+.subintro {
+  background: rgb(63, 4, 98);
+  background: linear-gradient(
+    354deg,
+    rgba(63, 4, 98, 0.015865721288515378) 0%,
+    rgba(177, 0, 255, 0.29037552521008403) 6%,
+    rgba(195, 21, 215, 0.22034751400560226) 99%
+  );
+}
+
+.introImages {
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+}
+
+.separator {
+  border: 1px outset;
+  background-color: #6600ff;
+  color: #6600ff;
+  height: 10px;
+  width: 300%;
+  text-align: right;
+  margin: 0px;
+}
+
+.card {
+  background: rgb(63, 4, 98);
+  background: linear-gradient(
+    0deg,
+    rgba(63, 4, 98, 0.5536808473389356) 0%,
+    rgba(177, 0, 255, 0.22034751400560226) 37%,
+    rgba(195, 21, 215, 0.25115983893557425) 99%
+  );
+}
+
+.services {
+  color: #393646;
+}
+
+article{
+  text-align: left;
+}
+.about{
+  height: 100vh;
+}
+
+.my-services{
+  height: 85vh;
+  width: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-top: 5vh;
+}
+
+.carousel-indicators{
+  padding-bottom: 55px;
 }
