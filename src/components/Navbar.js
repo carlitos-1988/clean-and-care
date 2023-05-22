@@ -58,7 +58,8 @@ class MyModal extends Component{
         formFullName : ' ',
         formEmail : ' ', 
         formNumber : ' ',
-        formUrgent: ' '
+        formUrgent: ' ',
+        formRV: ' '
     }
     }
 
@@ -76,10 +77,10 @@ class MyModal extends Component{
 
     handleSubmit = (event) =>{
         event.preventDefault();
-        const { formFullName, formEmail, formUrgent, formNumber } = this.state;
+        const { formFullName, formEmail, formUrgent, formNumber, formRV } = this.state;
 
         const mailtoLink = `mailto:honeylove3922@gmail.com?subject=Clean%20and%20Care%20Contact%20
-        Form&body=Email:%20${formEmail}%0DFull Name:%20${formFullName}%0DFull%20$Phone Number:%20${formNumber}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}`;
+        Form&body=Email:%20${formEmail}%0DFull Name:%20${formFullName}%0DFull%20$Phone Number:%20${formNumber}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}%0DRV%20Services:%20${formRV ? 'Yes' : 'No'}`;
         window.location.href = mailtoLink;
         
     }
@@ -122,10 +123,20 @@ class MyModal extends Component{
                                     <Form.Control type="string" placeholder="Enter Phone Number" onChange={this.handleInputChange} />
                             </Form.Group>
 
+                            <br></br>
+
 
                             <Form.Group className="mb-3" controlId="formUrgent">
                                     <Form.Check type="checkbox" label="Urgent ?" onChange={this.handleInputChange}/>
                             </Form.Group>
+
+                            <br></br>
+
+                            <Form.Group className="mb-3" controlId="formRV">
+                                    <Form.Check type="checkbox" label="RV Services ?" onChange={this.handleInputChange}/>
+                            </Form.Group>
+
+                            <br></br>
 
                             <Button variant="primary" type="submit">
                                     Submit

@@ -12,7 +12,8 @@ class Contact extends Component {
             formCity : ' ',
             formRooms : ' ', 
             formDate : ' ', 
-            formUrgent : ' '
+            formUrgent : ' ',
+            formRV: ' '
         }
     }
 
@@ -29,11 +30,11 @@ class Contact extends Component {
 
     handleSubmit = (event) =>{
         event.preventDefault();
-        const { formName, formEmail, formMessage, formCity, formRooms, formDate, formUrgent } = this.state;
-        console.log(formName);
+        const { formName, formEmail, formMessage, formCity, formRooms, formDate, formUrgent,formRV } = this.state;
+
 
         const mailtoLink = `mailto:honeylove3922@gmail.com?subject=Clean%20and%20Care%20Contact%20
-        Form&body=Name:%20${formName}%0DEmail:%20${formEmail}%0DMessage:%20${formMessage}%0DCity:%20${formCity}%0DRooms%20Needed:%20${formRooms}%0DDate%20Requested:%20${formDate}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}`;
+        Form&body=Name:%20${formName}%0DEmail:%20${formEmail}%0DMessage:%20${formMessage}%0DCity:%20${formCity}%0DRooms%20Needed:%20${formRooms}%0DDate%20Requested:%20${formDate}%0DUrgent:%20${formUrgent ? 'Yes' : 'No'}%0DRV%20Services:%20${formRV ? 'Yes' : 'No'}`;
         window.location.href = mailtoLink;
         
     }
@@ -108,6 +109,14 @@ class Contact extends Component {
                 <Form.Group controlId="formUrgent">
                     <Form.Check type="checkbox" label="Urgent matter" onChange={this.handleInputChange}/>
                 </Form.Group>
+
+                <hr></hr>
+
+                <Form.Group controlId="formRV">
+                    <Form.Check type="checkbox" label="Services for RV? " onChange={this.handleInputChange}/>
+                </Form.Group>
+
+                <hr></hr>
 
                 <Button variant="primary" type="submit">
                     Submit
