@@ -32,18 +32,18 @@ class Services extends Component{
             <Row>
                 <Col md={{ span: 2, offset: 1 }}>
                 <Image 
-                src="https://images.unsplash.com/photo-1607827448452-6fda561309d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2353&q=80" 
-                width={355} 
-                height={325} 
+                src="https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80" 
+                width={500} 
+                height={425} 
                 roundedCircle />
                 </Col>
                 <Col md={{ span: 3, offset: 4 }}>
                 <Card>
                     
                     <Card.Body>
-                        <Card.Title>Worry Free Guarantee</Card.Title>
+                        <Card.Title>RV Services </Card.Title>
                         <Card.Text>
-                        With Clean and Care, you can enjoy worry-free cleaning services. We are fully insured, and our team is thoroughly vetted and trained to ensure your complete satisfaction. Sit back and relax while we take care of your cleaning needs with professionalism and attention to detail.
+                        Clea and Care provides top-notch RV cleaning services, ensuring that your recreational vehicle sparkles both inside and out. Our dedicated team utilizes professional techniques and eco-friendly products to deliver a pristine and refreshed RV experience for your next adventure.
                         </Card.Text>
                         <Button variant="link" href="/contact">Contact Us</Button>
                     </Card.Body>
